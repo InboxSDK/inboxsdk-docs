@@ -1,15 +1,15 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'InboxSDK Documentation',
+  tagline: 'Build apps inside of Gmail',
+  url: 'https://www.inboxsdk.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Streak', // Usually your GitHub org/user name.
+  projectName: 'inboxsdk-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'InboxSDK Documentation',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -21,9 +21,8 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/InboxSDK/inboxsdk-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -76,7 +75,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Rewardly, Inc. Brought to you by <a href="www.streak.com">Streak</a>`,
     },
   },
   presets: [
@@ -89,13 +88,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/InboxSDK/inboxsdk-docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

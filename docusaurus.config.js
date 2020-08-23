@@ -11,6 +11,7 @@ module.exports = {
     navbar: {
       title: 'InboxSDK Documentation',
       logo: {
+        href: "/getting-started",
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
@@ -29,12 +30,20 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Getting Started',
+              to: 'getting-started',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'API Reference',
+              to: 'api-reference',
+            },
+            {
+              label: 'Resources',
+              to: 'resources',
+            },
+            {
+              label: 'Changelog',
+              to: 'changelog',
             },
           ],
         },
@@ -42,16 +51,12 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Google Group',
+              href: 'https://groups.google.com/forum/?nomobile=true#!forum/inboxsdk',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/inboxsdk',
             },
           ],
         },
@@ -60,7 +65,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/inboxsdk/inboxsdk-docs',
             },
           ],
         },
@@ -76,7 +81,7 @@ module.exports = {
         docs: {
           routeBasePath: '/', 
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
+          homePageId: 'docs/getting-started',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:

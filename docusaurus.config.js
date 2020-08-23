@@ -16,14 +16,8 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {
           href: 'https://github.com/InboxSDK/inboxsdk-docs',
-          label: 'GitHub',
+          label: 'Edit on GitHub',
           position: 'right',
         },
       ],

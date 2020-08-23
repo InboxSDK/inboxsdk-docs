@@ -1,11 +1,11 @@
 module.exports = {
   title: 'InboxSDK Documentation',
   tagline: 'Build apps inside of Gmail',
-  url: 'https://www.inboxsdk.com',
+  url: 'https://inboxsdk.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'Streak', // Usually your GitHub org/user name.
+  organizationName: 'InboxSDK', // Usually your GitHub org/user name.
   projectName: 'inboxsdk-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -64,10 +64,6 @@ module.exports = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',

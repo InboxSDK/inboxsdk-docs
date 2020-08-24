@@ -48,9 +48,6 @@ stream.take(5).onValue(function(value) {
 
 Note that reactive libraries often contain many specialized functions for creating streams from timers, event listeners, and other streams. This example purposefully uses a general method instead that can be quickly adapted to many uses. The above example should be enough to show you how to interact with the InboxSDK's stream-compatible methods, but if you want more information on reactive streams in order to use them more effectively, some recommended resources include the documentation of the above libraries, [Netflix's talk on Reactive Programming](https://www.youtube.com/watch?v=XRYN2xt11Ek), and [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754).
 
-
-
-
 ## FAQ
 ### What browsers are supported?
 Chrome and Safari are currently supported.  Chrome version 36 and Safari 10 are the minimum versions we support.

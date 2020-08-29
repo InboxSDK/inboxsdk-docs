@@ -100,5 +100,4 @@ export const Type = ({children, usedByAnchor, usedBy}) => ( <div style={{marginB
         marginBottom: "12px",
         borderBottom: "dashed 4px rgb(241 119 32)",
     }}>Type, used by: <a href={'#' + usedByAnchor}>{usedBy}</a></div>
-    <span> <code>{usedBy}</code></span>
 </div> );

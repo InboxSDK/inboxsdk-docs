@@ -8,6 +8,11 @@ module.exports = {
   organizationName: 'InboxSDK', // Usually your GitHub org/user name.
   projectName: 'inboxsdk-docs', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: '319308999ead35d0a17df976af4a951a',
+      indexName: 'inboxsdk',
+      searchParameters: {}, // Optional (if provided by Algolia)
+    },
     navbar: {
       title: 'InboxSDK Documentation',
       logo: {

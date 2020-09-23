@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Build apps inside of Gmail',
   url: 'https://inboxsdk.github.io',
   baseUrl: '/inboxsdk-docs/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'InboxSDK', // Usually your GitHub org/user name.
   projectName: 'inboxsdk-docs', // Usually your repo name.
@@ -16,8 +16,8 @@ module.exports = {
     navbar: {
       title: 'InboxSDK Documentation',
       logo: {
-        href: "/getting-started",
-        alt: 'My Site Logo',
+        href: "/",
+        alt: 'InboxSDK Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -85,8 +85,6 @@ module.exports = {
       {
         docs: {
           routeBasePath: '/', 
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'docs/getting-started',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:

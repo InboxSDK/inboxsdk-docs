@@ -47,7 +47,7 @@ The InboxSDK loads its code remotely from our servers, so users get the latest c
 
 **2018-07-31** Added the ContentPanelView.isActive method.
 
-**2018-07-23** Fixed an issue caused by a Gmail change where Widgets.showMoleView() sometimes failed to render a [MoleView]() correctly.
+**2018-07-23** Fixed an issue caused by a Gmail change where Widgets.showMoleView() sometimes failed to render a [MoleView](www.FFIIIIIXXXXMEEEE.com) correctly.
 
 **2018-07-09** Fixed an issue caused by a Gmail change where the ComposeView sent event could contain the wrong message and thread IDs.
 
@@ -55,31 +55,31 @@ The InboxSDK loads its code remotely from our servers, so users get the latest c
 
 **2018-06-27** Fixed an issue caused by a Gmail change where links created by Router.createLink to custom views would not work.
 
-**2018-05-17** Fixed an issue causing [AttachmentCardClickEvent.getDownloadURL()]() to not work sometimes in the Gmail redesign.
+**2018-05-17** Fixed an issue causing [AttachmentCardClickEvent.getDownloadURL()](www.FFIIIIIXXXXMEEEE.com) to not work sometimes in the Gmail redesign.
 
 **2018-05-09** Fixed an issue where ComposeView's sent event didn't fire in some situations.
 
-**2018-05-03** Added isUsingGmailMaterialUI, isConversationViewDisabled and getLanguage to [User](). Add new [Global]() namespace. Add preautoclose event to [DropdownView]().
+**2018-05-03** Added isUsingGmailMaterialUI, isConversationViewDisabled and getLanguage to [User](www.FFIIIIIXXXXMEEEE.com). Add new [Global](www.FFIIIIIXXXXMEEEE.com) namespace. Add preautoclose event to [DropdownView](www.FFIIIIIXXXXMEEEE.com).
 
-**2018-03-15** Add title property to [ThreadRowButtonDescriptor](), color property to [ModalButtonDescriptor](), and constrainTitleWidth property to [ModalOptions]().
+**2018-03-15** Add title property to [ThreadRowButtonDescriptor](www.FFIIIIIXXXXMEEEE.com), color property to [ModalButtonDescriptor](www.FFIIIIIXXXXMEEEE.com), and constrainTitleWidth property to [ModalOptions](www.FFIIIIIXXXXMEEEE.com).
 
-**2017-07-26** [Lists]().registerThreadRowViewHandler, [ThreadRowView]().addLabel, [ThreadRowView]().addImage, [ThreadRowView]().replaceDraftLabel, [ThreadRowView]().getSubject, [ThreadRowView]().getThreadIDAsync, [ThreadRowView]().getThreadIDIfStableAsync, [ThreadRowView]().getDraftID, [ThreadRowView]().getVisibleDraftCount, [ThreadRowView]().getVisibleMessageCount, and [ThreadRowView]().getContacts are now all supported in Inbox.
+**2017-07-26** [Lists](www.FFIIIIIXXXXMEEEE.com).registerThreadRowViewHandler, [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).addLabel, [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).addImage, [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).replaceDraftLabel, [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).getSubject, [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).getThreadIDAsync, [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).getThreadIDIfStableAsync, [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).getDraftID, [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).getVisibleDraftCount, [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).getVisibleMessageCount, and [ThreadRowView](www.FFIIIIIXXXXMEEEE.com).getContacts are now all supported in Inbox.
 
-**2017-07-26** [Toolbars]().registerThreadButton, [Toolbars]().registerToolbarButtonForList, and [Toolbars]().registerToolbarButtonForThreadView are now supported in Inbox.
+**2017-07-26** [Toolbars](www.FFIIIIIXXXXMEEEE.com).registerThreadButton, [Toolbars](www.FFIIIIIXXXXMEEEE.com).registerToolbarButtonForList, and [Toolbars](www.FFIIIIIXXXXMEEEE.com).registerToolbarButtonForThreadView are now supported in Inbox.
 
-**2017-07-26** The new function [Toolbars]().registerThreadButton has been added which supersedes [Toolbars]().registerToolbarButtonForList and [Toolbars]().registerToolbarButtonForThreadView.
+**2017-07-26** The new function [Toolbars](www.FFIIIIIXXXXMEEEE.com).registerThreadButton has been added which supersedes [Toolbars](www.FFIIIIIXXXXMEEEE.com).registerToolbarButtonForList and [Toolbars](www.FFIIIIIXXXXMEEEE.com).registerToolbarButtonForThreadView.
 
 **2017-06-22** The ComposeView "sent" event is now properly supported in Inbox. Its threadID and messageID properties have been deprecated in favor of its new asynchronous getThreadID() and getMessageID() methods.
 
-**2017-06-14** Deprecated the getThreadID, getThreadIDIfStable, and getMessageID methods of [ThreadView](), [ThreadRowView](), and [MessageView]() in favor of getThreadIDAsync, getThreadIDIfStableAsync, and getMessageIDAsync methods. This is done because it turns out that in some cases in Inbox the InboxSDK needs to make network requests against Gmail in order to correctly resolve the ID.
+**2017-06-14** Deprecated the getThreadID, getThreadIDIfStable, and getMessageID methods of [ThreadView](www.FFIIIIIXXXXMEEEE.com), [ThreadRowView](www.FFIIIIIXXXXMEEEE.com), and [MessageView](www.FFIIIIIXXXXMEEEE.com) in favor of getThreadIDAsync, getThreadIDIfStableAsync, and getMessageIDAsync methods. This is done because it turns out that in some cases in Inbox the InboxSDK needs to make network requests against Gmail in order to correctly resolve the ID.
 
-**2017-06-14** Fixed the modal and its backdrop to display over any open [DrawerView]().
+**2017-06-14** Fixed the modal and its backdrop to display over any open [DrawerView](www.FFIIIIIXXXXMEEEE.com).
 
-**2017-05-16** Fixed an issue where [MessageView]().getBodyElement() would on a message if it was an exact duplicate of a previous message within the same thread. (Surprisingly, Gmail put a different classname on the element in that specific case.)
+**2017-05-16** Fixed an issue where [MessageView](www.FFIIIIIXXXXMEEEE.com).getBodyElement() would on a message if it was an exact duplicate of a previous message within the same thread. (Surprisingly, Gmail put a different classname on the element in that specific case.)
 
 **2017-04-13** The InboxSDK was updated to deal with changes to the format of some of Gmail's network requests. The custom thread list feature was briefly broken today after Gmail's change and before our update.
 
-**2017-04-11** Inbox support for [ComposeView]()'s getDraftID() method and some of its events was added.
+**2017-04-11** Inbox support for [ComposeView](www.FFIIIIIXXXXMEEEE.com)'s getDraftID() method and some of its events was added.
 
 **2017-01-23** Our initial Inbox support is live!
 
@@ -87,13 +87,13 @@ The InboxSDK loads its code remotely from our servers, so users get the latest c
 
 **2016-11-14** The ThreadView sidebar has been re-designed, and developers are encouraged [to opt-in, try out the new design, and give feedback](https://groups.google.com/forum/#!topic/inboxsdk/hNwHc5ohOPc) before it becomes the default.
 
-**2016-09-14** Added the [DrawerView.associateComposeView]() method.
+**2016-09-14** Added the [DrawerView.associateComposeView](www.FFIIIIIXXXXMEEEE.com) method.
 
-**2016-08-18** Added the [AttachmentCardClickEvent.getDownloadURL()]() method, and deprecated the [AttachmentCardView.getDownloadURL()]() method. In Inbox, the download URL of an attachment card view can't be retrieved until after the card's preview overlay has been opened by the user, so the API has been restructured to reflect this.
+**2016-08-18** Added the [AttachmentCardClickEvent.getDownloadURL()](www.FFIIIIIXXXXMEEEE.com) method, and deprecated the [AttachmentCardView.getDownloadURL()](www.FFIIIIIXXXXMEEEE.com) method. In Inbox, the download URL of an attachment card view can't be retrieved until after the card's preview overlay has been opened by the user, so the API has been restructured to reflect this.
 
 **2016-08-09** Added the Conversations.registerFileAttachmentCardViewHandler() method to allow AttachmentCardViews to be handled directly rather than require them to be retrieved from a MessageView instance. Google Inbox often shows attachment cards outside of messages, so this API is being introduced to allow code to be made forward-compatible with that case now.
 
-**2016-07-21** Added the [Widgets.showDrawerView]() method and the [DrawerView]() class.
+**2016-07-21** Added the [Widgets.showDrawerView](www.FFIIIIIXXXXMEEEE.com) method and the [DrawerView](www.FFIIIIIXXXXMEEEE.com) class.
 
 **2015-12-14** Added the ComposeView.getCurrentDraftID() method to allow determining whether a ComposeView has been assigned a draft ID yet.
 

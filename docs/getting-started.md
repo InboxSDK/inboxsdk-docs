@@ -2,6 +2,7 @@
 id: getting-started
 title: Getting Started
 sidebar_label: Getting Started
+slug: /
 ---
 
 ## What is the InboxSDK?
@@ -93,7 +94,7 @@ For more basics of Chrome extensions, see: [Chrome Extension Reference](https://
 For more basics of Safari extensions, see: [Safari Extension Reference](https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/Introduction/Introduction.html)
 
 ### Loading using Local App (Basic)
-The simplest and easiest way to use the SDK is to have a myapp.js file placed inside your extension. This file will then load the SDK using [`InboxSDK.load()`]() FFIIIIIXXXXMEEEE
+The simplest and easiest way to use the SDK is to have a myapp.js file placed inside your extension. This file will then load the SDK using [`InboxSDK.load()`](WWW.FFIIIIIXXXXMEEEE.COM) 
 
 <Tabs
   defaultValue="myapp.js"

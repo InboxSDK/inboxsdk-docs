@@ -1,0 +1,4 @@
+---
+id: global
+title: Global
+---

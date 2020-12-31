@@ -1,0 +1,4 @@
+---
+id: toolbars
+title: Toolbars
+---

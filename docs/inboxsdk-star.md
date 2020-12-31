@@ -1,11 +1,9 @@
 ---
-id: api-reference
-title: API Reference
+id: inboxsdk-star
+title: InboxSDK.*
 ---
----
-## InboxSDK.*
-The functions in this class are only used for load related functionality like loading the SDK itself or other external scripts.
 
+The functions in this class are only used for load related functionality like loading the SDK itself or other external scripts.
 
 ### `load()` 
 <Method returns="Promise"></Method>
@@ -45,45 +43,6 @@ Loads a remote script into the extension's content script space and evals it. Re
 | Property        |      Description      |   Type |
 | ---------------- | ------------------- | -----: |
 | **nowrap**      | The name of your app. This is used by several methods in the SDK. | `boolean`, _default: `false`_ |
-
----
-## Compose
-
----
-## Lists
-
----
-## Conversations
-
----
-## Toolbars
-
----
-## Router
-
----
-## NavMenu
-
----
-## Widgets
-
----
-## ButterBar
-
----
-## Search
-
----
-## User
-
----
-## Global
-
----
-## Keyboard Shortcuts
-
----
-## Common Data Types
 
 export const Method = ({children, returns}) => ( <div style={{marginBottom: '8px', marginTop: '8px'}}>
     <div style={{

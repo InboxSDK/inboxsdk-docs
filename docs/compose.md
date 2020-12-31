@@ -1,4 +1,7 @@
-# Compose
+---
+id: compose
+title: Compose
+---
 
 This namespace contains methods and types related to adding your application elements to the Gmail or Inbox Compose UI. The compose UI has two variants. The New Compose UI appears when users are composing new messages and appear as windows above the rest of the app content. The second, the Reply UI, appears when users are replying to existing messages from the message they are replying to. This namespace handles both of these variants equivalently.
 
@@ -6,7 +9,7 @@ The [`ComposeView`](https://www.inboxsdk.com/docs/#ComposeView) type is how you 
 
 
 
-### `Compose.registerComposeViewHandler(handler)` 
+### `registerComposeViewHandler(handler)` 
 
 Register a handler to be called for every existing ComposeView as well as for all future ComposeViews that may come into existence. This method is the preferred way to add your application to every compose area such as a new compose window or inline reply compose areas. This function returns a function which removes the handler registration.
 
@@ -24,7 +27,7 @@ InboxSDK.load(1, 'YOUR_APP_ID_HERE').then(function(sdk){
 });
 ```
 
-### `Compose.openNewComposeView()` 
+### `openNewComposeView()` 
 
 Opens a new compose view. Any handlers you've registered for ComposeViews will be called as well. Returns a promise which will resolve with the new ComposeView once it has opened.
 
@@ -37,3 +40,5 @@ Returns: `Promise<ComposeView>`
 ## ComposeView
 
 Object that represents an open compose window **or** reply widget. The fields can be easily read and modified, and certain elements can be attached to it. This includes buttons and sidebars.  
+
+### `dfgkjnfd()`

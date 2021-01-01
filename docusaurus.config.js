@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Build apps inside of Gmail',
   url: 'https://inboxsdk.github.io',
   baseUrl: '/inboxsdk-docs/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'InboxSDK', // Usually your GitHub org/user name.

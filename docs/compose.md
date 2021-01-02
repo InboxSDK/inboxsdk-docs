@@ -5,7 +5,7 @@ title: Compose
 
 This namespace contains methods and types related to adding your application elements to the Gmail or Inbox Compose UI. The compose UI has two variants. The New Compose UI appears when users are composing new messages and appear as windows above the rest of the app content. The second, the Reply UI, appears when users are replying to existing messages from the message they are replying to. This namespace handles both of these variants equivalently.
 
-The [`ComposeView`](#composeview) type is how you interact with compose windows in gmail and inbox. the most common way to get access to a compose view is to use the [`compose.registercomposeviewhandler(`](javascript:$.find%28"methods-box[doc-class=compose]"%29[0].scrollmethodintoview%28"registercomposeviewhandler"%29) method which calls you back with every existing [`composeview`](https://www.inboxsdk.com/dos/#ComposeView) and all future [`ComposeView`](https://www.inboxsdk.com/docs/#ComposeView)s. From there a typical application will modify the [`ComposeView`](https://www.inboxsdk.com/docs/#ComposeView) as needed by adding buttons, adding content to the message, or accessing the recipient data.
+The [`ComposeView`](#composeview) type is how you interact with compose windows in gmail and inbox. the most common way to get access to a compose view is to use the [`Compose.registerComposeViewHandler()`](#registercomposeviewhandlerhandler) method which calls you back with every existing [`composeview`](composeview) and all future [`ComposeView`](#composeview)s. From there a typical application will modify the [`ComposeView`](composeview) as needed by adding buttons, adding content to the message, or accessing the recipient data.
 
 
 ### Namespace methods
@@ -13,9 +13,6 @@ The [`ComposeView`](#composeview) type is how you interact with compose windows 
 Register a handler to be called for every existing ComposeView as well as for all future ComposeViews that may come into existence. This method is the preferred way to add your application to every compose area such as a new compose window or inline reply compose areas. Returns a `function` which removes the handler registration.
 
 | Parameters | Type | Description |
-| :--- | :--- | :--- |
-| **handler** | `function(ComposeView)` | The function to be called || 
-Parameters | Type | Description |
 | :--- | :--- | :--- |
 | **handler** | `function(ComposeView)` | The function to be called |
 

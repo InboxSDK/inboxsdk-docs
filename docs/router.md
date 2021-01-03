@@ -72,7 +72,7 @@ _Returns_ a `function` which removes the handler registration.
 #### getCurrentRouteView()
 _Returns_ a `RouteView` of the current route view
 
-
+---
 ## RouteView
 RouteViews represent pages within Gmail or Inbox that a user can navigate to. RouteViews can be "custom", those that the application developer registers, or they can be "builtin" which are those that the email client natively supports like "Sent", "Drafts", or "Inbox"
 
@@ -102,7 +102,7 @@ Fires when this RouteView instance is navigated away from
 
 
 
-
+---
 ## CustomRouteView
 Extends `RouteView`. CustomRouteViews represent your own custom pages of content.
 ### Methods
@@ -111,7 +111,7 @@ _Returns_ a `HTMLElement` of the element representing the content area of this C
 
 
 
-
+---
 ## ListRouteView
 Extends `RouteView`. ListRouteViews represent pages within Gmail or Inbox that show a list of emails. Typical examples are the Inbox, Sent Mail, Drafts, etc. However, views like the Conversation view or Settings would *not* be a ListRouteView.
 
@@ -140,7 +140,7 @@ Simulates a click on the Gmail thread list refresh button.
 
 
 
-
+---
 ## SectionView
 SectionViews allow you to display additional content on ListRouteViews. They are typically rendered as additional content above the list of threads below. The visual style is similar to that of multiple inbox sections used in native Gmail and Inbox. Note that the rendering may vary slightly depending on the actual ListRouteView that the SectionView is rendered in. For example, SectionViews rendered on search results pages use different header styles to match Gmail's style more accurately.
 
@@ -162,7 +162,7 @@ Fires when the SectionView is no longer visible.
 
 
 
-
+---
 ## CollapsibleSectionView
 Extends `SectionView`. CollapsibleSectionViews allow you to display additional content on ListRouteViews. They are typically rendered as additional content above the list of threads below. The visual style is similar to that of multiple inbox sections used in native Gmail and Inbox. Note that the rendering may vary slightly depending on the actual ListRouteView that the CollapsibleSectionView is rendered in. For example, CollapsibleSectionViews rendered on search results pages use different header styles to match Gmail's style more accurately.
 
@@ -191,7 +191,7 @@ Fires when the CollapsibleSectionView is collapsed.
 
 
 
-
+---
 ## CustomListDescriptor
 This type is returned from the handler function passed to Router.handleCustomListRoute() as a way to configure the custom list route.
 
@@ -203,7 +203,7 @@ This type is returned from the handler function passed to Router.handleCustomLis
 
 
 
-
+---
 ## ThreadDescriptor
 An object used to describe a specific thread (e.g. when creating a custom list via Router.handleCustomListRoute()). At least one property must be present to identify a thread.
 
@@ -214,7 +214,7 @@ An object used to describe a specific thread (e.g. when creating a custom list v
 
 
 
-
+---
 ## SectionDescriptor
 The properties required to create a SectionView or CollapsibleSectionView.
 
@@ -233,7 +233,7 @@ The properties required to create a SectionView or CollapsibleSectionView.
 
 
 
-
+---
 ## RowDescriptor
 Represents the a single row to render in SectionViews and CollapsibleSectionViews
 
@@ -252,7 +252,7 @@ Represents the a single row to render in SectionViews and CollapsibleSectionView
 | **onClick** | `function` | Callback for when the row is clicked on. | No | `null` |
 
 
-
+---
 ## Enums and Constants
 ### NativeRouteIDs
 All the different route types that exist in Gmail

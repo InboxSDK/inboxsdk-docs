@@ -26,6 +26,7 @@ _Returns_ a `SupportItemView`
 ---
 ## SupportItemView
 Object that represents a Gmail support item in the support menu. This class is returned by Global.addSupportItem().
+### Methods
 #### destroy()
 Remove the support view item from support menu
 

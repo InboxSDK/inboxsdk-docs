@@ -7,7 +7,7 @@ The Toolbar namespace allows you to add your own buttons and actions to various 
 Toolbar buttons are typically used to take actions on the email(s) that the toolbar applies to. Do not use this API to add buttons that don't take a direct action on the selected email.
 Since toolbar buttons only apply to emails, they will ONLY appear when an email is selected or you are on a ThreadView.
 
-### Naemspace methods
+### Namespace methods
 #### registerThreadButton(toolbarButtonDescriptor)
 Registers a toolbar button to appear on thread rows, above the thread list when some rows are checked, and above threads.
 

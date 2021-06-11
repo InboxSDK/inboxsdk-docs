@@ -107,6 +107,9 @@ This type is used to describe the messages for ButterBar.showSaving to show
 | Property | Type | Description | Required? | Default |
 | :--- | :--- | :--- | :--- | :--- |
 | **text** | `string` | Text shown while the saving is ongoing. | No | `'Saving...'` |
+| **confirmationText** | `string` | Text shown when the save is complete. | No | `'Saved'` |
+| **confirmationTime** | `number` | Number of milliseconds the confirmation text is shown. | No | `1000` |
+| **showConfirmation** | `boolean` | Whether or not to show the confirmation message when the initial message is resolved. | No | `true` |
 | **html** | `string` | String to use as the innerHTML of the ButterBar instead of using the given text. | No |  |
 | **el** | `HTMLElement` | HTML element to insert into the ButterBar instead of using the given text. | No |  |
 | **className** | `string` | String to add as a css class to the ButterBar container element. | No |  |

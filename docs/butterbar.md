@@ -54,7 +54,7 @@ Hides any messages currently displayed by Gmail. This method is not implemented 
 
 
 --
-## MessageButtonDescriptor
+## MessageDescriptor
 This type is used to describe a message for ButterBar to show.
 
 | Property | Type | Description | Required? | Default |
@@ -74,7 +74,7 @@ This type is used to describe a message for ButterBar to show.
 
 
 --
-## LoadingMessageDescriptor
+## MessageButtonDescriptor
 This type is used to describe the buttons for ButterBar to show.
 
 | Property | Type | Description | Required? | Default |
@@ -86,7 +86,7 @@ This type is used to describe the buttons for ButterBar to show.
 
 
 --
-## SavingMessageDescriptor
+## LoadingMessageDescriptor
 This type is used to describe the messages for ButterBar.showLoading to show
 
 | Property | Type | Description | Required? | Default |
@@ -100,4 +100,17 @@ This type is used to describe the messages for ButterBar.showLoading to show
 | **persistent** | `boolean` | Whether this message should re-appear after being interrupted by another message. | No | `true` |
 | **messageKey** | `Object` | If a new message has the same messageKey as the current message, then the current message will always be destroyed, regardless of its priority. Sets the messageKey of both the initial message and the confirmation message. | No |  |
 
+--
+## SavingMessageDescriptor
+This type is used to describe the messages for ButterBar.showSaving to show
 
+| Property | Type | Description | Required? | Default |
+| :--- | :--- | :--- | :--- | :--- |
+| **text** | `string` | Text shown while the saving is ongoing. | No | `'Saving...'` |
+| **html** | `string` | String to use as the innerHTML of the ButterBar instead of using the given text. | No |  |
+| **el** | `HTMLElement` | HTML element to insert into the ButterBar instead of using the given text. | No |  |
+| **className** | `string` | String to add as a css class to the ButterBar container element. | No |  |
+| **priority** | `number` | Messages with lower priorities won't interrupt a currently displayed message. Loading messages default to a lower priority than other message types. | No | `-3` |
+| **hideOnViewChanged** | `boolean` | If true, the message will immediately disappear if the user navigates to another route view. | No | `true` |
+| **persistent** | `boolean` | Whether this message should re-appear after being interrupted by another message. | No | `true` |
+| **messageKey** | `Object` | If a new message has the same messageKey as the current message, then the current message will always be destroyed, regardless of its priority. Sets the messageKey of both the initial message and the confirmation message. | No |  |

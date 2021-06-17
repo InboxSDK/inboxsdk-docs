@@ -77,7 +77,7 @@ InboxSDK.load(2, 'YOUR_APP_ID_HERE').then(function(sdk){
 
 
 ### Running your Hello World! Extension
-To test your new app, open Chrome to `chrome://extensions` and check the "Developer Mode" checkbox. Then click on "Load Unpacked Extension" and point it to your extension directory. Next, open Gmail and stand in awe. For more details on testing Chrome extensions, see [Chrome Getting Started Docs](https://developer.chrome.com/extensions/getstarted#unpacked).
+To test your new app, open Chrome to `chrome://extensions` and check the "Developer Mode" checkbox. Then click on "Load Unpacked Extension" and point it to your extension directory. Next, open Gmail, Compose a new message, and stand in awe - a new "Nifty Button" has been added to the compose toolbar! For more details on testing Chrome extensions, see [Chrome Getting Started Docs](https://developer.chrome.com/extensions/getstarted#unpacked).
 
 
 ## Structuring Your App

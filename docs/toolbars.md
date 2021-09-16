@@ -36,7 +36,7 @@ _Returns_ a `function` which removes the button registration.
 _Returns_ a `function` which removes the button registration.
 
 #### addToolbarButtonForApp(appToolbarButtonDescriptor)
-Adds a button and dropdown to the "Global Toolbar". This is typically used to show a dropdown with general information about your application. In Gmail this refers to the navigation area at the top right of the window and in Inbox it refers to the top level toolbar.
+Adds a button and dropdown to the "Global Toolbar". This is typically used to show a dropdown with general information about your application. In Gmail this refers to the navigation area at the top right of the window.
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |
@@ -92,7 +92,7 @@ This type is passed into the Toolbars.addToolbarButtonForApp() method as a way t
 
 
 ## AppToolbarButtonView
-Object that represents an app toolbar button that has been already added to the top navigation area of Gmail or Inbox. This class is returned by Toolbars.addToolbarButtonForApp().
+Object that represents an app toolbar button that has been already added to the top navigation area of Gmail. This class is returned by Toolbars.addToolbarButtonForApp().
 
 ### Methods
 #### open()
@@ -102,7 +102,7 @@ Open the dropdown for the app toolbar button
 Close the dropdown for the app toolbar button
 
 #### remove()
-Remove the app toolbar button from Gmail/Inbox
+Remove the app toolbar button from Gmail
 
 
 ### Events
@@ -124,4 +124,4 @@ The different toolbar sections that exist
 | :--- | :--- |
 | **INBOX_STATE** | The section is for buttons that move emails out of or into the users inbox. |
 | **COLLAPSED** | This section is for buttons that alter metadata of emails. Common examples are labeling or moving an email. |
-| **METADATA_STATE** | This sectiom is used for other actions. Typically these will be placed in the "More" menu in Gmail or in submenus in Inbox. |
+| **METADATA_STATE** | This sectiom is used for other actions. Typically these will be placed in the "More" menu. |

@@ -2,7 +2,7 @@
 id: butterbar
 title: ButterBar
 ---
-This namespace contains methods for showing informative messages to the user. In Gmail this is a small yellow "butter bar" overlay near the top. In Inbox, the UI is different but the purpose is the same.
+This namespace contains methods for showing informative messages to the user. In Gmail this is a small yellow "butter bar" overlay near the top.
 
 ### Namespace methods
 #### showMessage(options)
@@ -50,7 +50,7 @@ Hides all messages created by the same app with the given messageKey.
 
 
 #### hideGmailMessage()
-Hides any messages currently displayed by Gmail. This method is not implemented in Inbox; the InboxSDK does not interact with Inbox's own notifications.
+Hides any messages currently displayed by Gmail.
 
 
 --

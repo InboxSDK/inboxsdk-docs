@@ -6,7 +6,7 @@ slug: /
 ---
 
 ## What is the InboxSDK?
-The InboxSDK is a library for building browser extensions for Gmail and soon Inbox too. It provides APIs for browser extensions to interact with and extend the Gmail and Inbox UI. The SDK is built so that multiple extensions can use it on a page at once without conflicting with each other.
+The InboxSDK is a library for building browser extensions for Gmail. It provides APIs for browser extensions to interact with and extend the Gmail UI. The SDK is built so that multiple extensions can use it on a page at once without conflicting with each other.
 
 The library is intended to facilitate the creation of extensions like our [Streak extension](https://www.streak.com). The library is sophisticated enough for the Streak extension itself to be built on, but the library does not provide facilities for other extensions to interact with user data specific to the Streak extension (pipelines, boxes, etc.). To integrate with Streak itself, see the [Streak API docs](https://www.streak.com/api).
 
@@ -272,7 +272,7 @@ The `inboxsdk.js` shim defines a few functions which you can directly use immedi
 ### Views & Events
 Several methods in the InboxSDK return `View` types. These `View` classes have a variety of functionality depending on the UI element they represent. However, one critical commonality is that they are all `EventEmitter`s. This means that you can subscribe to a variety of events that each `View` emits.
 
-The events they emit are all documented in their respective documentation sections (i.e. see `ComposeView` has a section for events). One commonality is that they all emit a `destroy` event and have their `destroyed` property set to true when they are no longer available in the page. It's often useful to subscribe to this event and then cleanup any resources/memory/references you may no longer need. Performance inside Gmail/Inbox is important to maintain, so it's critical you release any relevant resources when this event is emitted.
+The events they emit are all documented in their respective documentation sections (i.e. see `ComposeView` has a section for events). One commonality is that they all emit a `destroy` event and have their `destroyed` property set to true when they are no longer available in the page. It's often useful to subscribe to this event and then cleanup any resources/memory/references you may no longer need. Performance inside Gmail is important to maintain, so it's critical you release any relevant resources when this event is emitted.
 
 To subscribe to events, refer to the documentation for `EventEmitter`s. Here's a simple example showing how to subscribe to events:
 

@@ -2,10 +2,10 @@
 id: router
 title: Router
 ---
-This namespace contains functionality associated with creating your own content inside Gmail or Inbox. It allows you to define "Routes" which define a full page of content and an associated URL space for which they are active. You can think of routes as different pages in your application. Gmail and Inbox already have a few routes built in (Inbox, Sent, Drafts, etc). This namespace allows you to define your own as well as listen in on the built in routes being navigated to.
+This namespace contains functionality associated with creating your own content inside Gmail. It allows you to define "Routes" which define a full page of content and an associated URL space for which they are active. You can think of routes as different pages in your application. Gmail already have a few routes built in (Inbox, Sent, Drafts, etc). This namespace allows you to define your own as well as listen in on the built in routes being navigated to.
 
-This is typically used when you want to create content to fill the main content area of Gmail or Inbox.
-Every route has a URL associated with it and can have optional parameters. However, you never construct these URL's manually. The SDK will take care of creating a URL that will work in Gmail/Inbox for your Route. Since these URL's may change due to implementations of Gmail/Inbox, you should always create new links when trying to set URL on elements or simply use the goto function which naviagtes to the created link automatically.
+This is typically used when you want to create content to fill the main content area of Gmail.
+Every route has a URL associated with it and can have optional parameters. However, you never construct these URL's manually. The SDK will take care of creating a URL that will work in Gmail for your Route. Since these URL's may change due to implementations of Gmail, you should always create new links when trying to set URL on elements or simply use the goto function which naviagtes to the created link automatically.
 Using the handleX family of methods, you can specify which routes your application can handle. You will be called back with and instance of a RouteView or similar when the user navigates to a route you've declared you can handle. For custom routes, you'll typically add your own content and for built in routes, you'll typically modify the existing content.
 Route ID's are path like strings with named parameters, for example: "myroute/:someParamMyRouteNeeds".
 
@@ -50,7 +50,7 @@ Registers a handler (callback) to be called when the user navigates to any route
 _Returns_ a `function` which removes the handler registration.
 
 #### handleListRoute(routeID, handler)
-Registers a handler (callback) to be called when the user navigates to a list route which matches the routeID you provide. Gmail and Inbox have several built in routes which are "Lists". These include routes like Inbox, All Mail, Sent, Drafts, etc. You'll typically use this to modify Gmail's and Inbox's built in List routes.
+Registers a handler (callback) to be called when the user navigates to a list route which matches the routeID you provide. Gmail have several built in routes which are "Lists". These include routes like Inbox, All Mail, Sent, Drafts, etc. You'll typically use this to modify Gmail's built in List routes.
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |
@@ -74,7 +74,7 @@ _Returns_ a `RouteView` of the current route view
 
 ---
 ## RouteView
-RouteViews represent pages within Gmail or Inbox that a user can navigate to. RouteViews can be "custom", those that the application developer registers, or they can be "builtin" which are those that the email client natively supports like "Sent", "Drafts", or "Inbox"
+RouteViews represent pages within Gmail that a user can navigate to. RouteViews can be "custom", those that the application developer registers, or they can be "builtin" which are those that the email client natively supports like "Sent", "Drafts", or "Inbox"
 
 This class mostly just gives you metadata about the route, most of the functionality to modify the route are defined in subclasses like ListRouteView and CustomRouteView, which you get by handling those types specifically in the Router.
 
@@ -113,7 +113,7 @@ _Returns_ a `HTMLElement` of the element representing the content area of this C
 
 ---
 ## ListRouteView
-Extends `RouteView`. ListRouteViews represent pages within Gmail or Inbox that show a list of emails. Typical examples are the Inbox, Sent Mail, Drafts, etc. However, views like the Conversation view or Settings would *not* be a ListRouteView.
+Extends `RouteView`. ListRouteViews represent pages within Gmail that show a list of emails. Typical examples are the Inbox, Sent Mail, Drafts, etc. However, views like the Conversation view or Settings would *not* be a ListRouteView.
 
 ### Methods
 #### addCollapsibleSection(options)
@@ -142,9 +142,9 @@ Simulates a click on the Gmail thread list refresh button.
 
 ---
 ## SectionView
-SectionViews allow you to display additional content on ListRouteViews. They are typically rendered as additional content above the list of threads below. The visual style is similar to that of multiple inbox sections used in native Gmail and Inbox. Note that the rendering may vary slightly depending on the actual ListRouteView that the SectionView is rendered in. For example, SectionViews rendered on search results pages use different header styles to match Gmail's style more accurately.
+SectionViews allow you to display additional content on ListRouteViews. They are typically rendered as additional content above the list of threads below. The visual style is similar to that of multiple inbox sections used in native Gmail. Note that the rendering may vary slightly depending on the actual ListRouteView that the SectionView is rendered in. For example, SectionViews rendered on search results pages use different header styles to match Gmail's style more accurately.
 
-You can either render rows (that are visually similar to Gmail/Inbox rows) or custom content in your SectionView. Until content is provided, the SectionView will simply display a "Loading..." indicator. See ListRouteView.addSection for more information.
+You can either render rows (that are visually similar to Gmail rows) or custom content in your SectionView. Until content is provided, the SectionView will simply display a "Loading..." indicator. See ListRouteView.addSection for more information.
 ### Methods
 #### remove()
 Removes this section from the current Route.
@@ -164,7 +164,7 @@ Fires when the SectionView is no longer visible.
 
 ---
 ## CollapsibleSectionView
-Extends `SectionView`. CollapsibleSectionViews allow you to display additional content on ListRouteViews. They are typically rendered as additional content above the list of threads below. The visual style is similar to that of multiple inbox sections used in native Gmail and Inbox. Note that the rendering may vary slightly depending on the actual ListRouteView that the CollapsibleSectionView is rendered in. For example, CollapsibleSectionViews rendered on search results pages use different header styles to match Gmail's style more accurately.
+Extends `SectionView`. CollapsibleSectionViews allow you to display additional content on ListRouteViews. They are typically rendered as additional content above the list of threads below. The visual style is similar to that of multiple inbox sections used in native Gmail. Note that the rendering may vary slightly depending on the actual ListRouteView that the CollapsibleSectionView is rendered in. For example, CollapsibleSectionViews rendered on search results pages use different header styles to match Gmail's style more accurately.
 
 You can either render rows (that are visually similar to Gmail rows) or custom content in your CollapsibleSectionView. Until content is provided, the SectionView will simply display a "Loading..." indicator. See ListRouteView.addCollapsibleSection for more information.
 ### Methods
@@ -242,7 +242,7 @@ Represents the a single row to render in SectionViews and CollapsibleSectionView
 | **title** | `string` | First textual column | Yes |  |
 | **body** | `string` | Second textual column | Yes |  |
 | **shortDetailText** | `string` | Last text right-aligned. Often used for dates. | Yes |  |
-| **isRead** | `string` | Whether the row should be rendered as read or unread similar to Gmail and Inbox styles. | Yes |  |
+| **isRead** | `string` | Whether the row should be rendered as read or unread similar to Gmail styles. | Yes |  |
 | **labels** | `Array<LabelDescriptor>` | Any labels that should be rendered. | Yes |  |
 | **iconHtml** | `string` | An optional HTML to an icon to display on the left side of the row | No | `null` |
 | **iconUrl** | `string` | An optional url to an icon to display on the left side of the row | No | `null` |
@@ -264,9 +264,6 @@ All the different route types that exist in Gmail
 | **SENT** | sent list, Permissible Route Params: page (optional) |
 | **STARRED** | starred list, Permissible Route Params: page (optional) |
 | **DRAFTS** | drafts list, Permissible Route Params: page (optional) |
-| **SNOOZED** | snoozed list (Inbox only) |
-| **DONE** | done list (Inbox only) |
-| **REMINDERS** | reminders list (Inbox only) |
 | **LABEL** | any label list, Permissible Route Params: labelName, page (optional), |
 | **TRASH** | trash list, Permissible Route Params: page (optional) |
 | **SPAM** | spam list, Permissible Route Params: page (optional) |
@@ -295,9 +292,6 @@ The different list routes natively available in Gmail. List routes display lists
 | **SENT** | sent list, Permissible Route Params: page (optional) |
 | **STARRED** | starred list, Permissible Route Params: page (optional) |
 | **DRAFTS** | drafts list, Permissible Route Params: page (optional) |
-| **SNOOZED** | snoozed list (Inbox only) |
-| **DONE** | done list (Inbox only) |
-| **REMINDERS** | reminders list (Inbox only) |
 | **LABEL** | any label list, Permissible Route Params: labelName, page (optional), |
 | **TRASH** | trash list, Permissible Route Params: page (optional) |
 | **SPAM** | spam list, Permissible Route Params: page (optional) |
@@ -312,7 +306,7 @@ The different route types that exist
 | :--- | :--- |
 | **LIST** | a list of threads or messages |
 | **THREAD** | a single thread or message |
-| **SETTINGS** | a Gmail or Inbox settings |
+| **SETTINGS** | a Gmail settings page |
 | **CHAT** | a single chat history |
 | **CUSTOM** | a custom route created by any app |
 | **UNKNOWN** | an unknown route |

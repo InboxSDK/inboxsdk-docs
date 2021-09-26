@@ -3,12 +3,11 @@
 id: navmenu
 title: NavMenu
 ---
-This namespace contains functionality associated with adding navigation items to the navigation menu of Gmail and Inbox. Typically, these navigation links are accessible by the user on the left side of the email client and include built in navigation items like the Inbox, Sent Mail or Drafts links.
+This namespace contains functionality associated with adding navigation items to the navigation menu of Gmail. Typically, these navigation links are accessible by the user on the left side of the email client and include built in navigation items like the Inbox, Sent Mail or Drafts links.
 
 This namespace allows you to add your own items to this Navigation menu. Typically, these navigation items are useful to send users to different Routes that you have already registered providing navigation for your entire application.
 The navigation menu is represented as a tree structure of items. Each item can have 0 or more children and there are several options to configure the appearance of the items.
 Items can also have accessories which provide secondary actions like opening a dropdown (like Gmails labels) or providing a "create new" action. There are several predefined accesories, see CreateAccessoryDescriptor, IconButtonAccessoryDescriptor or DropdownButtonAccessoryDescriptor.
-In Inbox, adding children to a 'root' level NavItemView (i.e. an item which is not a child of another item) causes the parent to become a 'section header'. Section headers are styled to resemble the labels for Inbox's native sections like "Bundled in the inbox", and add a horizontal dividing line above themselves. When a NavItemView becomes a section header, it is no longer interactive and does not navigate to its routeID or trigger an onClick handler. Using section headers can be useful for breaking up your app's navigation into categories or groups.
 
 ### Namespace methods
 #### addNavItem(navItemDescriptor)
@@ -23,7 +22,7 @@ _Returns_ a `NavItemView`
 
 ---
 ## NavItemView
-NavItemsViews are the elements placed inside a NavMenu. Each NavItemView represents an entry in the left navigation of Gmail or Inbox. These NavItemViews can be nested.
+NavItemsViews are the elements placed inside a NavMenu. Each NavItemView represents an entry in the left navigation of Gmail. These NavItemViews can be nested.
 
 Typically the main action of a NavItemView is performed when the user clicks on the main text. However, you can also provide accessories which are secondary actions which typically appear on the right side of the NavItemView but may be rendered in other ways.
 For nested NavItemViews, the SDK will handle collapsing and expanding children depending on user input.

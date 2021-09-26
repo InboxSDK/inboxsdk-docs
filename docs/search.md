@@ -2,7 +2,7 @@
 id: search-docs
 title: Search
 ---
-This namespace allows you to interact Gmail and Inbox's default search behaviour. It allows for two use cases: 1) To provide autocomplete suggestions as the user types in their query and 2) To rewrite sarch queries.
+This namespace allows you to interact with Gmail's default search behaviour. It allows for two use cases: 1) To provide autocomplete suggestions as the user types in their query and 2) To rewrite sarch queries.
 
 ### Namespace methods
 #### registerSearchSuggestionsProvider(handler)
@@ -25,7 +25,7 @@ Allows you to rewrite certain queries that may be typed in or programatically se
 
 --
 ## AutocompleteSearchResult
-This type is returned by the function you pass into the Search.registerSearchSuggestionsProvider() method as a way to add autocomplete suggestions to the Gmail/Inbox search box.
+This type is returned by the function you pass into the Search.registerSearchSuggestionsProvider() method as a way to add autocomplete suggestions to the Gmail search box.
 
 | Property | Type | Description | Required? | Default |
 | :--- | :--- | :--- | :--- | :--- |

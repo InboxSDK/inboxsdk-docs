@@ -2,7 +2,7 @@
 id: conversations
 title: Conversations
 ---
-This namespace allows you to interact with Gmail and Inbox conversations (typically called threads). The fundamental views you interact with are ThreadView and MessageView and there is a 1 to many relationship between them. The functions in Conversations.* allow you to obtain these views which you can then further manipulate.
+This namespace allows you to interact with Gmail conversations (typically called threads). The fundamental views you interact with are ThreadView and MessageView and there is a 1 to many relationship between them. The functions in Conversations.* allow you to obtain these views which you can then further manipulate.
 
 It's important to note that ThreadViews and MessageViews can be navigated to in various ways by the user depending on their email client and their settings (i.e. preview pane on in Gmail). This is abstracted completely away from you so you can just focus on manipulating the views once they are given to you.
 
@@ -119,7 +119,7 @@ Fires when the thread view is no longer visible (i.e. the user navigates away fr
 ## MessageView
 Object that represents a visible message in the UI. There are properties to access data about the message itself as well as change the state of the UI. MessageViews have a view state as well as a loaded state. These 2 properties are orthogonal to each other.
 
-A messages' view state can be one of MessageViewViewStates.EXPANDED, MessageViewViewStates.COLLAPSED or MessageViewViewStates.HIDDEN. Gmail and Inbox visually display messages in a thread in different ways depending on what they are trying to show a user. These values are described in the enum MessageViewViewStates.
+A messages' view state can be one of MessageViewViewStates.EXPANDED, MessageViewViewStates.COLLAPSED or MessageViewViewStates.HIDDEN. Gmail visually display messages in a thread in different ways depending on what they are trying to show a user. These values are described in the enum MessageViewViewStates.
 The load state of a message determines whether all of the data pertaining to a message has been loaded in the UI. In some case, not all the information (such as recipients or the body) may be loaded, typically when the the view state is COLLAPSED or HIDDEN. You should not depend on any relationship between the view state and load state. Instead, use the provided MessageView.getViewState() and MessageView.isLoaded() methods.
 
 ### Methods
@@ -133,7 +133,7 @@ Adds an AttachmentCardView to the message. Each message has an area where attach
 _Returns_ an `AttachmentCardView`
 
 #### addAttachmentsToolbarButton(buttonOptions)
-Adds a button to the download all area of the attachments tray. This function will not be implemented in Inbox.
+Adds a button to the download all area of the attachments tray.
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |
@@ -299,12 +299,12 @@ Object that represents an Attachment Card visible in a message containing attach
 
 ### Methods
 #### getAttachmentType()
-Returns the type of the attachment card. Values returned include FILE (regular file attachments), DRIVE (Drive attachments that are present as links in the message), CUSTOM (attachment cards added by this or other apps built on the SDK), and UNKNOWN (for other types of attachment cards rendered by Gmail/Inbox that aren't specifically supported currently such as YouTube and Yelp links).
+Returns the type of the attachment card. Values returned include FILE (regular file attachments), DRIVE (Drive attachments that are present as links in the message), CUSTOM (attachment cards added by this or other apps built on the SDK), and UNKNOWN (for other types of attachment cards rendered by Gmail that aren't specifically supported currently such as YouTube and Yelp links).
 
 _Returns_ a `string`
 
 #### addButton(buttonDescriptor)
-Adds a button to this attachment card. In Inbox, this will add a button to the attachment preview overlay that opens once the card is clicked on.
+Adds a button to this attachment card.
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |
@@ -343,7 +343,7 @@ Fires when the view card is destroyed.
 ## AttachmentCardClickEvent
 This object is given to the onClick function defined in a CustomButtonDescriptor added to an AttachmentCardView.
 #### getDownloadURL()
-Get the URL for the attachment card's download link as a promise for a string. For FILE attachment cards, the URL will be a short-lived URL that can be accessed without cookies. For CUSTOM attachment cards, the URL will be the downloadUrl property of the card's download button if it has one, otherwise null. Other attachment card types may not have a download URL, and the promise may resolve to null. To work in Inbox, your extension must have permissions to the "https://mail-attachment.googleusercontent.com/" domain.
+Get the URL for the attachment card's download link as a promise for a string. For FILE attachment cards, the URL will be a short-lived URL that can be accessed without cookies. For CUSTOM attachment cards, the URL will be the downloadUrl property of the card's download button if it has one, otherwise null. Other attachment card types may not have a download URL, and the promise may resolve to null.
 
 _Returns_ a `Promise<string>`
 
@@ -382,7 +382,7 @@ This type is accepted by the MessageView.addAttachmentCardView() method to inser
 | **fileIconImageUrl** | `string` | The url of the icon of the attachment. | Yes |  |
 | **buttons** | `Array<(DownloadButtonDescriptor|CustomButtonDescriptor)>` | An array of buttons to support functionality in addition to the preview functionality | Yes |  |
 | **foldColor** | `string` | The color of the attachment card fold and an accompying accent color. | No | `#BEBEBE` |
-| **mimeType** | `string` | The mime type of the attachment if it has one. This is used to render image mime types slightly differently to be consistent with Gmail and Inbox. Specifically, the previewThumbnailUrl images are rendered full bleed to show as much of the image as possible. As such the hover UI looks slightly different. | No | `null` |
+| **mimeType** | `string` | The mime type of the attachment if it has one. This is used to render image mime types slightly differently to be consistent with Gmail. Specifically, the previewThumbnailUrl images are rendered full bleed to show as much of the image as possible. As such the hover UI looks slightly different. | No | `null` |
 
 
 
@@ -422,8 +422,8 @@ This type is passed into the ThreadView.addSidebarContentPanel() method as a way
 | **el** | `HTMLElement` | The element to display in the content panel. | Yes |  |
 | **title** | `string` | The text to show in the tab. | Yes |  |
 | **iconUrl** | `string` | URL for the icon to show in the tab. Should be a local extension file URL or a HTTPS url. | Yes |  |
-| **appName** | `string` | (Currently Inbox-only) In Inbox, when a thread is open but the sidebar isn't, then buttons to open the sidebar will be shown next to the thread. Each button may be associated with multiple sidebars. The sidebars are grouped into buttons based on this appName property, their app's appName passed to `InboxSDK.load()`, or the title property. | No |  |
-| **appIconUrl** | `string` | (Currently Inbox-only) Overrides the icon for the sidebar-opener button. | No |  |
+| **appName** | `string` | When a thread is open but the sidebar isn't, then buttons to open the sidebar will be shown next to the thread. Each button may be associated with multiple sidebars. The sidebars are grouped into buttons based on this appName property, their app's appName passed to `InboxSDK.load()`, or the title property. | No |  |
+| **appIconUrl** | `string` | Overrides the icon for the sidebar-opener button. | No |  |
 | **id** | `string` | A string can be passed to identify this panel so that user preferences specific to this panel may be saved. If this property is not present, then the title will be used as the id. | No |  |
 | **hideTitleBar** | `boolean` | Hide the title bar if this is the only sidebar panel attached to the thread. If multiple panels are added (including panels from other extensions) then the title bar will appear so that the user can adjust the panels with the title bar controls. | No | `false` |
 | **orderHint** | `number` | If multiple content panels for your app are added then they will be ordered by this value. | No | `0` |

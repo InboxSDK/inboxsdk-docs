@@ -3,9 +3,9 @@ id: compose
 title: Compose
 ---
 
-This namespace contains methods and types related to adding your application elements to the Gmail or Inbox Compose UI. The compose UI has two variants. The New Compose UI appears when users are composing new messages and appear as windows above the rest of the app content. The second, the Reply UI, appears when users are replying to existing messages from the message they are replying to. This namespace handles both of these variants equivalently.
+This namespace contains methods and types related to adding your application elements to the Gmail Compose UI. The compose UI has two variants. The New Compose UI appears when users are composing new messages and appear as windows above the rest of the app content. The second, the Reply UI, appears when users are replying to existing messages from the message they are replying to. This namespace handles both of these variants equivalently.
 
-The [`ComposeView`](#composeview) type is how you interact with compose windows in gmail and inbox. the most common way to get access to a compose view is to use the [`Compose.registerComposeViewHandler()`](#registercomposeviewhandlerhandler) method which calls you back with every existing [`composeview`](composeview) and all future [`ComposeView`](#composeview)s. From there a typical application will modify the [`ComposeView`](composeview) as needed by adding buttons, adding content to the message, or accessing the recipient data.
+The [`ComposeView`](#composeview) type is how you interact with compose windows in gmail. the most common way to get access to a compose view is to use the [`Compose.registerComposeViewHandler()`](#registercomposeviewhandlerhandler) method which calls you back with every existing [`composeview`](composeview) and all future [`ComposeView`](#composeview)s. From there a typical application will modify the [`ComposeView`](composeview) as needed by adding buttons, adding content to the message, or accessing the recipient data.
 
 
 ### Namespace methods
@@ -133,7 +133,7 @@ Returns the `HTMLElement` of the body of the compose view.
 Returns a `HTMLElement` of the metadata form of the compose view. This is the form that holds the To, CC, BCC, elements.
 
 #### getInitialMessageID()
-Returns a `string` with the initial message ID of the draft. If this is a new compose then the message ID will be null. If the user has opened an existing draft then this function returns the message ID of the draft when it was first opened. The use of the getDraftID() method is recommended over this method. This method will not be implemented in Inbox.
+Returns a `string` with the initial message ID of the draft. If this is a new compose then the message ID will be null. If the user has opened an existing draft then this function returns the message ID of the draft when it was first opened. The use of the getDraftID() method is recommended over this method.
 
 #### getThreadID()
 Returns a `string` of the thread ID of the draft. If the draft is not a reply, then this will be null.
@@ -213,7 +213,7 @@ Returns a `boolean` whether the compose view is in "forward" mode. A compose vie
 Returns a `boolean` whether or not this compose view is in full-screen mode.
 
 #### isInlineReplyForm()
-Returns a `boolean` whether or not this compose view is an inline reply. Inline replies are used by Gmail and Inbox when responding to a message right underneath the original message. You typically will not need to use this.
+Returns a `boolean` whether or not this compose view is an inline reply. Inline replies are used by Gmail when responding to a message right underneath the original message. You typically will not need to use this.
 
 #### isMinimized()
 Returns a `boolean` whether or not this compose view is minimized.

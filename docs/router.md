@@ -264,9 +264,6 @@ All the different route types that exist in Gmail
 | **SENT** | sent list, Permissible Route Params: page (optional) |
 | **STARRED** | starred list, Permissible Route Params: page (optional) |
 | **DRAFTS** | drafts list, Permissible Route Params: page (optional) |
-| **SNOOZED** | snoozed list |
-| **DONE** | done list |
-| **REMINDERS** | reminders list |
 | **LABEL** | any label list, Permissible Route Params: labelName, page (optional), |
 | **TRASH** | trash list, Permissible Route Params: page (optional) |
 | **SPAM** | spam list, Permissible Route Params: page (optional) |
@@ -295,9 +292,6 @@ The different list routes natively available in Gmail. List routes display lists
 | **SENT** | sent list, Permissible Route Params: page (optional) |
 | **STARRED** | starred list, Permissible Route Params: page (optional) |
 | **DRAFTS** | drafts list, Permissible Route Params: page (optional) |
-| **SNOOZED** | snoozed list |
-| **DONE** | done list |
-| **REMINDERS** | reminders list |
 | **LABEL** | any label list, Permissible Route Params: labelName, page (optional), |
 | **TRASH** | trash list, Permissible Route Params: page (optional) |
 | **SPAM** | spam list, Permissible Route Params: page (optional) |
@@ -312,7 +306,7 @@ The different route types that exist
 | :--- | :--- |
 | **LIST** | a list of threads or messages |
 | **THREAD** | a single thread or message |
-| **SETTINGS** | a Gmail settings |
+| **SETTINGS** | a Gmail settings page |
 | **CHAT** | a single chat history |
 | **CUSTOM** | a custom route created by any app |
 | **UNKNOWN** | an unknown route |

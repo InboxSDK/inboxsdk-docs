@@ -2,7 +2,7 @@
 id: search-docs
 title: Search
 ---
-This namespace allows you to interact Gmaildefault search behaviour. It allows for two use cases: 1) To provide autocomplete suggestions as the user types in their query and 2) To rewrite sarch queries.
+This namespace allows you to interact with Gmail's default search behaviour. It allows for two use cases: 1) To provide autocomplete suggestions as the user types in their query and 2) To rewrite sarch queries.
 
 ### Namespace methods
 #### registerSearchSuggestionsProvider(handler)

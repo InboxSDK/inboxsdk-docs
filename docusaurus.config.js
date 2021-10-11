@@ -78,7 +78,6 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Rewardly, Inc. Brought to you by <a href="www.streak.com">Streak</a>`,
     },
-    sidebarCollapsible: false,
   },
   presets: [
     [
@@ -86,6 +85,7 @@ module.exports = {
       {
         docs: {
           routeBasePath: '/', 
+          sidebarCollapsible: false,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:

@@ -70,6 +70,7 @@ This object represents the set of options to configure a new NavItemView.
 | Property | Type | Description | Required? | Default |
 | :--- | :--- | :--- | :--- | :--- |
 | **name** | `string` | Name of the NavItem to be used for display | Yes |  |
+| **key** | `string` | Unique identifier for the nav item used for remembering collapse state between sessions. | No | value of name |
 | **routeID** | `string` | The ID of the route to navigate to when the NavItemView is clicked on. | No | `null` |
 | **routeParams** | `Object` | The parameters of the route being navigated to when the NavItemView is clicked on. | No | `null` |
 | **onClick** | `function` | A function that will be called when the NavItemView is clicked. Passed a single event object parameter which includes a preventDefault() function. If the NavItemView has a routeID, calling preventDefault() will prevent navigation to the given route. | No | `null` |

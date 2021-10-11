@@ -8,6 +8,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'InboxSDK', // Usually your GitHub org/user name.
   projectName: 'inboxsdk-docs', // Usually your repo name.
+  trailingSlash: true,
   themeConfig: {
     algolia: {
       apiKey: '319308999ead35d0a17df976af4a951a',

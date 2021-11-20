@@ -19,6 +19,10 @@ Don't forget to register for an AppId to run your app in production, it's quick 
 Get your AppId here: [`🌎 AppId Registration`](https://www.inboxsdk.com/register)  
 Download the SDK here: [`⬇️  inboxsdk.js`](https://www.inboxsdk.com/build/inboxsdk.js)
 
+:::tip MV3 Compatible Beta now on NPM
+New beta of `inboxsdk.js` available on NPM that is compatible with Manifest V3 and doesn't use remote loading [See Announcement](https://groups.google.com/g/inboxsdk/c/MAT_zImFu5I/m/N_7nDojRAgAJ)
+:::
+
 ### Hello World! Sample Extension
 
 Here's how simple it is to build a basic app, you need two files: `myapp.js` which is your application code that interacts with the SDK, and the `manifest.json` which describes a basic Chrome extension.

@@ -1,6 +1,4 @@
 ---
-## ---
-id: navmenu
 title: NavMenu
 ---
 This namespace contains functionality associated with adding navigation items to the navigation menu of Gmail. Typically, these navigation links are accessible by the user on the left side of the email client and include built in navigation items like the Inbox, Sent Mail or Drafts links.

@@ -14,6 +14,3 @@ _Returns_ a `boolean` whether conversation view disabled by the user
 #### getLanguage()
 _Returns_ a `string` of the current locale code of Gmail
 
-#### getAccountSwitcherContactList()
-_Returns_ an `Array<Contact>` of all of the user's accounts from the account switcher.
-

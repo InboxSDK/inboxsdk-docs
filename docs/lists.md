@@ -124,6 +124,8 @@ _Returns_ a `Number` of visible messages in the thread based on the visible nume
 #### getContacts()
 _Returns_ an `Array<Contact>` of the visible contacts listed on the row. Note: this may not include all participants on the thread as this information is not visible.
 
+#### getElement()
+_Returns_ a `HTMLElement`. Use if you need direct access to the DOM element for the row. Be careful when using this because you're exposed to the raw Gmail DOM, and it's up to you to handle all possible Gmail settings and updates.
 
 
 

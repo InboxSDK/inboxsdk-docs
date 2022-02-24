@@ -5,6 +5,12 @@ title: Change Log
 
 The InboxSDK loads its code remotely from our servers, so users get the latest code and bug fixes automatically without extension developers being required to make any changes. We also often introduce new features over time, and on occasion we deprecate old APIs and recommend new ones. These API changes will be listed here and announced in emails to registered developers as necessary.
 
+This changelog mostly includes details about API changes. Not all bug fixes have been documented here.
+
+**2022-02-24** Added ThreadRowView.getElement().
+
+**2022-02-24** Deprecated User.getAccountSwitcherContactList() because of Gmail changes that prevent us from continuing to support the feature. Depending on the version of Gmail in use, the function may now return a one-item list containing only the currently-signed-in user.
+
 **2019-06-13** Removed the limitation on ContentPanelView.open() where it could only be used within a user-input event. The limit was made to discourage extensions from being too aggressive with opening the sidebar, but this limit seemed to be too restrictive.
 
 **2019-06-13** Added Lists.getSelectedThreadRowViews() and Lists.registerThreadRowViewSelectionHandler() methods for detecting selected thread rows.

@@ -25,7 +25,7 @@ IMPORTANT: Your handler will only be called for MessageViews that are "loaded". 
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |
-| **handler** | `function(ComposeView)` | The handler to call when a MessageView is displayed. |
+| **handler** | `function(MessageView)` | The handler to call when a MessageView is displayed. |
 _Returns_ a `function` which removes the handler registration.
 
 

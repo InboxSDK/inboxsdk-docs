@@ -14,7 +14,7 @@ Registers your handler to be called when the user navigates to a ThreadView. You
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |
-| **handler** | `function(ComposeView)` | The handler to call when a ThreadView is displayed. This handler is passed one parameter, a ThreadView. |
+| **handler** | `function(ThreadView)` | The handler to call when a ThreadView is displayed. This handler is passed one parameter, a ThreadView. |
 _Returns_ a `function` which removes the handler registration.
 
 
@@ -25,7 +25,7 @@ IMPORTANT: Your handler will only be called for MessageViews that are "loaded". 
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |
-| **handler** | `function(ComposeView)` | The handler to call when a MessageView is displayed. |
+| **handler** | `function(MessageView)` | The handler to call when a MessageView is displayed. |
 _Returns_ a `function` which removes the handler registration.
 
 
@@ -36,7 +36,7 @@ IMPORTANT: Your handler will be called for MessageViews that are both "loaded" a
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |
-| **handler** | `function(ComposeView)` | The handler to call when a message view is displayed. |
+| **handler** | `function(MessageView)` | The handler to call when a message view is displayed. |
 _Returns_ a `function` which removes the handler registration.
 
 

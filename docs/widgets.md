@@ -5,6 +5,9 @@ title: Widgets
 This namespace contains functions for creating various widgets that are styled to look and feel native to Gmail.
 
 ### Namespace methods
+#### isMoleViewTitleBarLightColor()
+Returns true if the mole view has a light color title bar as part of Gmail's "new view" styling, and returns false if the Compose has a dark title bar.
+
 #### showModalView(options)
 This creates a ModalView and shows it. You can insert an arbitrary HTMLElement for content of the modal.
 
@@ -15,7 +18,7 @@ This creates a ModalView and shows it. You can insert an arbitrary HTMLElement f
 _Returns_ a `ModalView`
 
 #### showMoleView(options)
-This creates a MoleView and shows it. A mole view is a modal that is attached to the bottom of the viewport and has minimize and close buttons just like a compose view.
+This creates a MoleView and shows it. A mole view is a modal that is attached to the bottom of the viewport and has minimize and close buttons just like a compose view. Use isMoleViewTitleBarLightColor() to determine the color of the view titlebar.
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |

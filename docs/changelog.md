@@ -7,6 +7,8 @@ The InboxSDK loads its code remotely from our servers, so users get the latest c
 
 This changelog mostly includes details about API changes. Not all bug fixes have been documented here.
 
+**2022-08-10** Added Widgets.isMoleViewTitleBarLightColor() method for detecting if MoleViews have the original dark titlebar or the new lighter titlebar
+
 **2022-02-24** Added ThreadRowView.getElement().
 
 **2022-02-24** Deprecated User.getAccountSwitcherContactList() because of Gmail changes that prevent us from continuing to support the feature. Depending on the version of Gmail in use, the function may now return a one-item list containing only the currently-signed-in user.

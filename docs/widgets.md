@@ -18,7 +18,7 @@ This creates a ModalView and shows it. You can insert an arbitrary HTMLElement f
 _Returns_ a `ModalView`
 
 #### showMoleView(options)
-This creates a MoleView and shows it. A mole view is a modal that is attached to the bottom of the viewport and has minimize and close buttons just like a compose view. Use isMoleViewTitleBarLightColor() to determine the color of the view titlebar.
+This creates a MoleView and shows it. A mole view is a modal that is attached to the bottom of the viewport and has minimize and close buttons just like a compose view. Use isMoleViewTitleBarLightColor() to determine the color of the view titlebar if you need to know whether to place light or dark images inside the titlebar.
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |

@@ -7,6 +7,10 @@ The InboxSDK loads its code remotely from our servers, so users get the latest c
 
 This changelog mostly includes details about API changes. Not all bug fixes have been documented here.
 
+**2022-09-12** Support new network request format used by Gmail. This fixes issues with a new rollout of Gmail that affected the functionality of multiple APIs in the InboxSDK
+
+**2022-08-22** Mole views now use an icon color that matches Gmail's native icon color regardless of the version of Gmail that is enabled
+
 **2022-08-10** Added Widgets.isMoleViewTitleBarLightColor() method for detecting if MoleViews have the original dark titlebar or the new lighter titlebar
 
 **2022-02-24** Added ThreadRowView.getElement().

@@ -1,5 +1,4 @@
 ---
-id: user
 title: User
 ---
 This namespace contains methods and types related to the currently logged in user.

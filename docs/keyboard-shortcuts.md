@@ -1,5 +1,4 @@
 ---
-id: keyboard-shortcuts
 title: Keyboard Shortcuts
 ---
 This namespace allows you to setup keyboard shortcuts that your application can response to.

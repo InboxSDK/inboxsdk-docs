@@ -1,5 +1,4 @@
 ---
-id: compose
 title: Compose
 ---
 

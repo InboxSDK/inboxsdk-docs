@@ -1,5 +1,4 @@
 ---
-id: conversations
 title: Conversations
 ---
 This namespace allows you to interact with Gmail conversations (typically called threads). The fundamental views you interact with are ThreadView and MessageView and there is a 1 to many relationship between them. The functions in Conversations.* allow you to obtain these views which you can then further manipulate.

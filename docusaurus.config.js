@@ -25,7 +25,7 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://github.com/InboxSDK/inboxsdk',
+          href: 'https://github.com/InboxSDK/InboxSDK',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',

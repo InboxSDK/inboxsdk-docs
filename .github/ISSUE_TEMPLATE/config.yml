@@ -1,0 +1,4 @@
+contact_links:
+  - name: 📃 Bugs with InboxSDK Implementation
+    url: https://github.com/InboxSDK/inboxsdk/issues/new
+    about: This issue tracker is only for documentation issues. Please file bugs in the actual SDK here.

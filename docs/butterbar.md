@@ -1,5 +1,4 @@
 ---
-id: butterbar
 title: ButterBar
 ---
 This namespace contains methods for showing informative messages to the user. In Gmail this is a small yellow "butter bar" overlay near the top.

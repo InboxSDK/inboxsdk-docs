@@ -1,5 +1,4 @@
 ---
-id: router
 title: Router
 ---
 This namespace contains functionality associated with creating your own content inside Gmail. It allows you to define "Routes" which define a full page of content and an associated URL space for which they are active. You can think of routes as different pages in your application. Gmail already have a few routes built in (Inbox, Sent, Drafts, etc). This namespace allows you to define your own as well as listen in on the built in routes being navigated to.

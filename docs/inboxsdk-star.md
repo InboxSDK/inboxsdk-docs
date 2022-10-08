@@ -1,5 +1,4 @@
 ---
-id: inboxsdk-star
 title: InboxSDK.*
 ---
 

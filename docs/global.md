@@ -1,5 +1,4 @@
 ---
-id: global
 title: Global
 ---
 This namespace contains methods and types related to the UI Elements that are available Globally in Gmail.

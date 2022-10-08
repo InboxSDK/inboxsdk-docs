@@ -12,6 +12,7 @@ module.exports = {
   themeConfig: {
     algolia: {
       apiKey: '319308999ead35d0a17df976af4a951a',
+      appId: 'inboxsdk',
       indexName: 'inboxsdk',
       searchParameters: {}, // Optional (if provided by Algolia)
     },
@@ -24,9 +25,10 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://github.com/InboxSDK/inboxsdk-docs',
-          label: 'Edit on GitHub',
+          href: 'https://github.com/InboxSDK/InboxSDK',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -57,10 +59,6 @@ module.exports = {
         {
           title: 'Community',
           items: [
-            {
-              label: 'Google Group',
-              href: 'https://groups.google.com/forum/?nomobile=true#!forum/inboxsdk',
-            },
             {
               label: 'Twitter',
               href: 'https://twitter.com/inboxsdk',

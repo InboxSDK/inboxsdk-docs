@@ -1,7 +1,5 @@
 ---
-id: getting-started
 title: Getting Started
-sidebar_label: Getting Started
 slug: /
 ---
 
@@ -17,13 +15,16 @@ Don't forget to register for an AppId to run your app in production, it's quick 
 ## Quick Start
 
 Get your AppId here: [`🌎 AppId Registration`](https://www.inboxsdk.com/register)  
-Download the SDK here: [`⬇️  inboxsdk.js`](https://www.inboxsdk.com/build/inboxsdk.js)
 
-:::tip MV3 Compatible Beta now on NPM
-New beta of `inboxsdk.js` available on NPM that is compatible with Manifest V3 and doesn't use remote loading [See Announcement](https://groups.google.com/g/inboxsdk/c/MAT_zImFu5I/m/N_7nDojRAgAJ)
+:::tip MV3 Compatible Version now on NPM
+The InboxSDK is now available on NPM in a Chrome MV3-compatible form which does not use remote loading. This Getting Started page is still being updated for the NPM version. Please see instead the [Hello World example extension GitHub repo](https://github.com/InboxSDK/hello-world) and the [NPM version announcement post](https://groups.google.com/g/inboxsdk/c/MAT_zImFu5I/m/N_7nDojRAgAJ).
 :::
 
-### Hello World! Sample Extension
+**The instructions below referring to `inboxsdk.js` are currently mostly about the non-NPM Chrome MV2 compatible release that uses remote code loading.**
+
+Download the SDK here: [`⬇️  inboxsdk.js`](https://www.inboxsdk.com/build/inboxsdk.js)
+
+### Hello World! Sample MV2 Extension
 
 Here's how simple it is to build a basic app, you need two files: `myapp.js` which is your application code that interacts with the SDK, and the `manifest.json` which describes a basic Chrome extension.
 
@@ -293,5 +294,6 @@ InboxSDK.load(2, 'YOUR_APP_ID_HERE').then(function(sdk){
   });
 });
 ```
+
 ### Compatibility
 The SDK is currently at version 2 and when loading the SDK that is the number you should specify. The SDK may add backwards compatible API's to the current version, but incompatible changes will come with a version update. Your code is guranteed to work so long as you specify the correct version number AND that version number is at most two releases old.

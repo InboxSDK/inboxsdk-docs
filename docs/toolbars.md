@@ -1,5 +1,4 @@
 ---
-id: toolbars
 title: Toolbars
 ---
 The Toolbar namespace allows you to add your own buttons and actions to various toolbars in Gmail or Inbox. Toolbars appear in various Lists, ThreadViews and MessageViews. Within a toolbar, you have control over the placement of your buttons.

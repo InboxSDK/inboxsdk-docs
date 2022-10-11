@@ -58,6 +58,14 @@ Registers a handler (callback) to be called when the user navigates to a list ro
 
 _Returns_ a `function` which removes the handler registration.
 
+Example:
+
+```ts
+sdk.Router.handleListRoute(sdk.Router.NativeRouteIDs.INBOX, (listRouteView) => {
+  // ...
+});
+```
+
 #### handleCustomListRoute(routeID, handler)
 Used to create a custom view that shows a list of threads. When the user navigates to the given routeID, the handler function will be called. The handler function will be passed the starting offset (if the user sees 50 threads per page and is on page 2, then the offset will be 50), and a maximum number of threads to return. It must return a CustomListDescriptor, or a promise which resolves to one.
 

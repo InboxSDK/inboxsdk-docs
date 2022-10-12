@@ -5,17 +5,6 @@ title: Lists
 This namespace allows you to interact with Lists of emails. They typically appear in various views like Inbox, Search or Labels. The interaction primarily lets you view and modify data in each row of the list.
 
 ### Namespace methods
-#### registerComposeViewHandler(handler)
-Register a handler to be called for every existing ComposeView as well as for all future ComposeViews that may come into existence. This method is the preferred way to add your application to every compose area such as a new compose window or inline reply compose areas. 
-
-| Parameters | Type | Description |
-| :--- | :--- | :--- |
-| **handler** | `function(ComposeView)` | The function to be called |
-
-_Returns_ a `function` which removes the handler registration.
-
-
-
 
 #### registerThreadRowViewHandler(handler)
 Registers a handler that gets called whenever a new ThreadRowView becomes visible on screen. Your handler is guaranteed to be called exactly once per thread per route. That is, each time your user visits a route with ThreadRowViews, this handler will get called once for each ThreadRowView. 

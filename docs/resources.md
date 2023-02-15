@@ -49,5 +49,5 @@ Note that reactive libraries often contain many specialized functions for creati
 
 ## FAQ
 ### What browsers are supported?
-Chrome and Safari are currently supported.  Chrome version 36 and Safari 10 are the minimum versions we support.
+Chrome and Safari are currently supported.  Chrome version 86 and Safari 14 are the minimum versions we support.
 Firefox support is under consideration; please let us know if you're interested.

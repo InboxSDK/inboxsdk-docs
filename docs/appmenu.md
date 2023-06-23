@@ -2,7 +2,7 @@
 title: AppMenu
 ---
 
-This namespace contains functionality associated with adding app menu items to the app menu panel of Gmail. Typically, these app menu items are accessible by the user on the left side of the email client and include built in app menu items like the Inbox and optionally either Chat, Meet, or both. If both Chat and Meet aren't enabled, the AppMenu will not be displayed.
+This namespace contains functionality associated with adding app menu items to the app menu panel of Gmail. Typically, these app menu items are accessible by the user on the left side of the email client and include built in app menu items like the Mail and optionally either Chat, Meet, or both. If both Chat and Meet aren't enabled, the AppMenu will not be displayed.
 
 This namespace allows you to add your own items to this App menu. Typically, these app menu items are useful to either place high level collapsible panels like the NavMenu or send users to different Routes that you have already registered providing navigation for your entire application.
 The app menu is represented as a list of items. Each item can have either a CollapsiblePanel or click handler.
@@ -12,7 +12,7 @@ Items with CollapsiblePanels can also have accessories which provide primary act
 
 #### isShown()
 
-Returns true if the user has Chat, Meet, or both enabled.
+Returns true if the app menu is visible. At time of writing, this typically means they have chose to enable Chat, Meet, or both.
 
 #### addMenuItem(appMenuItemDescriptor)
 

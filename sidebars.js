@@ -8,6 +8,7 @@ module.exports = {
       "conversations",
       "toolbars",
       "router",
+      "appmenu",
       "navmenu",
       "widgets",
       "butterbar",

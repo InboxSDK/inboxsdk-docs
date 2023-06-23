@@ -150,14 +150,6 @@ Typically the main action of a CollapsiblePanelView is performed when the user c
 
 Updates the loading property of the CollapsiblePanelView.
 
-#### update(menuItemDescriptor)
-
-| Parameters                     | Type                         | Description                                     |
-| :----------------------------- | :--------------------------- | :---------------------------------------------- |
-| **appMenuItemPanelDescriptor** | `AppMenuItemPanelDescriptor` | The new descriptor for the app menu item panel. |
-
-Updates the AppMenuItem's AppMenuItemDescriptor
-
 #### remove()
 
 Remove this CollapsiblePanelView from its parent

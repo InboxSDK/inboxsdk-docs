@@ -28,6 +28,22 @@ If the `insertOrder` option is provided, the app menu item will be added at that
 
 _Returns_ an `AppMenuItemView`
 
+#### isMenuOpen
+
+_Returns_ whether or not the AppMenu Burger is uncollapsed or not.
+
+### Properties
+
+| Property   | Type     | Description                                        | Required? | Default |
+| :--------- | :------- | :------------------------------------------------- | :-------- | :------ |
+| **events** | `Events` | A kefir stream of events related to the namespace. |           |         |
+
+### Events
+
+#### collapseToggled
+
+The TransitionEvent that was fired when the AppMenu's collapsiblepanel toggle collapsed or open started, canceled, or ended. `transactionstart` and `transitioncancel` are currently fired. We also theoretically handle `transactionend`, but it isn't currently fired.
+
 ---
 
 ## AppMenuItemView

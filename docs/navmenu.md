@@ -48,6 +48,9 @@ Collapse or uncollapse this NavItemView
 | :--- | :--- | :--- |
 | **collapseValue** | `boolean` | whether to collapse or uncollapse |
 
+#### getElement()
+_Returns_ the underlying HTMLElement for the `NavItemView`.
+
 
 ### Events
 #### destroy

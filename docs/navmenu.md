@@ -119,7 +119,7 @@ The DropdownButtonAccessoryDescriptor allows you to add a dropdown right next yo
 | Property | Type | Description | Required? | Default |
 | :--- | :--- | :--- | :--- | :--- |
 | **type** | `string` | For DropdownButtonAccessoryDescriptors this should always be set to DROPDOWN_BUTTON | Yes |  |
-| **onClick** | `function(event)` | A callback when the dropdown button is pressed. The event object passed to you has a dropdown property which you can fill your content with. | Yes |  |
+| **onClick** | `function(event)` | A callback when the dropdown button is pressed. The event object passed to you has a dropdown (DropdownView) property which you can fill your content with. | Yes |  |
 
 
 

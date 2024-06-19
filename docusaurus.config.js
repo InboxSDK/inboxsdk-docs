@@ -10,12 +10,12 @@ module.exports = {
   projectName: 'inboxsdk-docs', // Usually your repo name.
   trailingSlash: true,
   themeConfig: {
-    algolia: {
-      apiKey: '319308999ead35d0a17df976af4a951a',
-      appId: 'inboxsdk',
-      indexName: 'inboxsdk',
-      searchParameters: {}, // Optional (if provided by Algolia)
-    },
+    // algolia: {
+    //   apiKey: '319308999ead35d0a17df976af4a951a',
+    //   appId: 'inboxsdk',
+    //   indexName: 'inboxsdk',
+    //   searchParameters: {}, // Optional (if provided by Algolia)
+    // },
     navbar: {
       title: 'InboxSDK Documentation',
       logo: {

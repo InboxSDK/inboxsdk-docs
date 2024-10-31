@@ -10,12 +10,12 @@ module.exports = {
   projectName: 'inboxsdk-docs', // Usually your repo name.
   trailingSlash: true,
   themeConfig: {
-    algolia: {
-      apiKey: '319308999ead35d0a17df976af4a951a',
-      appId: 'inboxsdk',
-      indexName: 'inboxsdk',
-      searchParameters: {}, // Optional (if provided by Algolia)
-    },
+    // algolia: {
+    //   apiKey: '319308999ead35d0a17df976af4a951a',
+    //   appId: 'inboxsdk',
+    //   indexName: 'inboxsdk',
+    //   searchParameters: {}, // Optional (if provided by Algolia)
+    // },
     navbar: {
       title: 'InboxSDK Documentation',
       logo: {
@@ -88,7 +88,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/InboxSDK/inboxsdk-docs',
+            'https://github.com/InboxSDK/inboxsdk-docs/edit/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

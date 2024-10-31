@@ -97,7 +97,7 @@ _Returns_ a `String` representation of the timestamp of the most recent message 
 _Returns_ a `Promise<String>` of the Gmail Thread ID of the thread
 
 #### getThreadIDIfStableAsync()
-Gets the Gmail Thread ID of the thread only if the thread ID is stable. Some threads such as those with only a single Draft message in them will occasionally change their thread ID. If you're using the thread ID as a key, you may experiemnce unexpected behaviour if you're not careful about this fact. This method provides you with an easy way to tell if the thread has a stable ID. 
+Gets the Gmail Thread ID of the thread only if the thread ID is stable. Some threads such as those with only a single Draft message in them will occasionally change their thread ID. If you're using the thread ID as a key, you may experience unexpected behaviour if you're not careful about this fact. This method provides you with an easy way to tell if the thread has a stable ID. 
 _Returns_ a `Promise<String>` for the thread ID if it is expected to stay the same, otherwise it will return a `Promise<null>`
 
 #### getDraftID()

@@ -9,12 +9,12 @@ The InboxSDK is a library for building browser extensions for Gmail. It provides
 The library is intended to facilitate the creation of extensions like our [Streak extension](https://www.streak.com). The library is sophisticated enough for the Streak extension itself to be built on, but the library does not provide facilities for other extensions to interact with user data specific to the Streak extension (pipelines, boxes, etc.). To integrate with Streak itself, see the [Streak API docs](https://www.streak.com/api).
 
 :::info AppId Registration
-Don't forget to register for an AppId to run your app in production, it's quick and free: [AppId Registration](https://www.inboxsdk.com/register)
+Don't forget to register for an AppId to run your app in production, it's quick and free: [AppId Registration](https://register.inboxsdk.com)
 :::
 
 ## Quick Start
 
-Get your AppId here: [`🌎 AppId Registration`](https://www.inboxsdk.com/register)  
+Get your AppId here: [`🌎 AppId Registration`](https://register.inboxsdk.com)  
 
 :::tip MV3 Compatible Version now on NPM
 The InboxSDK is now available on NPM in a Chrome MV3-compatible form which does not use remote loading. This Getting Started page is still being updated for the NPM version. Please see instead the [Hello World example extension GitHub repo](https://github.com/InboxSDK/hello-world) and the [NPM version announcement post](https://groups.google.com/g/inboxsdk/c/MAT_zImFu5I/m/N_7nDojRAgAJ).
@@ -92,7 +92,7 @@ Browser extensions built using the InboxSDK are structured like normal browser e
 
 1. `inboxsdk.js` should be placed inside your extension directory
 2. The `manifest.json` (Chrome) or `info.plist` (Safari) needs to list the above file as a content script which runs on "https://mail.google.com" and "https://inbox.google.com"
-3. You must [register for an AppId](https://www.inboxsdk.com/register) to use your app in production. This is a 100% free step and takes about 5 seconds to complete. Your AppId will be tied to your Google account.
+3. You must [register for an AppId](https://register.inboxsdk.com) to use your app in production. This is a 100% free step and takes about 5 seconds to complete. Your AppId will be tied to your Google account.
 4. One of the "Loading Your App" methods must be done as described below
 
 For more basics of Chrome extensions, see: [Chrome Extension Reference](https://developer.chrome.com/extensions)  

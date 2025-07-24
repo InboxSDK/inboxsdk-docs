@@ -53,14 +53,14 @@ Adds an image to the thread row view.
 | **imageDescriptor** | `ImageDescriptor` or `Stream(ImageDescriptor)` | An options object for the image. |
 
 #### addButton(buttonDescriptor)
-Adds an icon style button to this row, placed right next to the star button.
+Adds an icon style button to the thread row view. Note: Placement of the button is conditional based on the user's Gmail setting "Hover actions".
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |
 | **buttonDescriptor** | `ThreadRowButtonDescriptor` or `Stream(ThreadRowButtonDescriptor)` | An options object for the button. |
 
 #### addActionButton(buttonDescriptor)
-Adds an action button to the right of the subject.
+Adds an action button (CTA style) to the right of the subject.
 
 | Parameters | Type | Description |
 | :--- | :--- | :--- |

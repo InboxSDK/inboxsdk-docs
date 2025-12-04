@@ -47,6 +47,7 @@ The options used to configure a modal when calling Widgets.showModalView().
 | **showCloseButton** | `boolean` | When chrome is set to false, this option controls whether a close (X) button should be added to the modal anyway. If chrome is set to true then this property doesn't do anything. | No | `false` |
 | **title** | `string` | Text to show as the title of the modal | No | `''` |
 | **buttons** | `Array<ModalButtonDescriptor>` | An array of buttons to add to the modal. The UI will be consistent with native Gmail buttons. If none are provided, your el will occupy all of the modal. There may only be one button with a type of PRIMARY_ACTION, see ModalButtonDescriptor docs | No | `[]` |
+| **closeOnEscape** | `boolean` | Wether the modal should close when the user hits the `escape` key. | No | `true` |
 
 
 

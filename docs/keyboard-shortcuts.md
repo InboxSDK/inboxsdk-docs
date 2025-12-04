@@ -33,3 +33,4 @@ Describes a keyboard shortcut combination
 | :--- | :--- | :--- | :--- | :--- |
 | **chord** | `string` | The keys the user has to press to activate the shortcut. Simultaneous keypresses can be defined with "+". For multi-key chords like Gmail's, include a space between the keys, i.e. "g i". Syntax matches the combokeys library. | Yes |  |
 | **description** | `string` | The description text that shows up in Gmail's keyboard shortcut help (when the user presses '?'). | Yes |  |
+| **orderHint** | `integer` | Used to sort the shortcuts in the Gmail keyboard shortcut help (ascending). Shortcuts without orderHint will be shown at the end. | No | undefined |
